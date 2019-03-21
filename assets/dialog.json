@@ -1,0 +1,81 @@
+{
+        "fromXianzhe": [
+                {
+                        "id": "0000",
+                        "details": [["很高兴遇见你"]],
+                        "responses": [
+                                {
+                                        "content": "我也是！",
+                                        "nextXianzhe": ["0003"]
+                                },
+                                {
+                                        "content": "我很怀疑这点……",
+                                        "nextXianzhe": ["0001"]
+                                }
+                        ]
+                },
+                {
+                        "id": "0001",
+                        "details": [["……", "你是傻B吗？"]],
+                        "nextXianzhe": ["0003"]
+                },
+                {
+                        "id": "0002",
+                        "details": [["我随便说说的，别在意"]],
+                        "nextXianzhe": ["0003"]
+                },
+                {
+                        "id": "0003",
+                        "details": [["你想知道点什么？"]],
+                        "responses": [
+                                {
+                                        "content": "你是谁？",
+                                        "nextXianzhe": ["0004"]
+                                }
+                        ]
+                },
+                {
+                        "id": "0004",
+                        "details": [
+                                [
+                                        "唔……",
+                                        "这是个哲学问题……",
+                                        "我是你爸爸!!"
+                                ]
+                        ],
+                        "nextXianzhe": ["0005"]
+                },
+                {
+                        "id": "0005",
+                        "details": [
+                                [
+                                        "你还想知道啥？？？"
+                                ]
+                        ],
+                        "responses": [
+                                {
+                                        "content": "Tell me about your favorite project？",
+                                        "nextXianzhe": ["0005"]
+                                },
+                                {
+                                        "content": "你的职业是？",
+                                        "nextXianzhe": ["0023"]
+                                }
+                        ]
+                },
+                {
+                        "id": "0023",
+                        "details": [
+                                [
+                                        "我住在我女朋友家里蹭吃蹭喝 XD"
+                                ]
+                        ],
+                        "responses": [
+                                {
+                                        "content": "有意向跳槽来我们公司当CEO吗？",
+                                        "nextXianzhe": ["03"]
+                                }
+                        ]
+                }
+        ]
+}
