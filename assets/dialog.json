@@ -1,6 +1,15 @@
 {
         "fromXianzhe": [
                 {
+                        "id": "2001",
+                        "details": [
+                                ["Thanks!"],
+                                ["谢谢, which means thanks"],
+                                ["😊😊😊"],
+                                ["Appreciate it!"]
+                        ]
+                },
+                {
                         "id": "0000",
                         "details": [["很高兴遇见你"]],
                         "responses": [
@@ -78,6 +87,50 @@
                                         "nextXianzhe": ["0007"]
                                 }
                         ]
+                },
+                {
+                        "id": "0009",
+                        "details": [
+                                [
+                                        "I just graduated from UC Irvine couple of days ago! 🎉🎉🎉"
+                                ]
+                        ],
+                        "responses": [
+                                {
+                                        "content": "Congrats! 👍 What's your next plan?",
+                                        "nextXianzhe": ["0010"]
+                                },
+                                {
+                                        "content": "Good for you!!",
+                                        "nextXianzhe": ["2001"]
+                                }
+                        ]
+                },
+                {
+                        "id": "0010",
+                        "details": [
+                                [
+                                        "I just joined Google working on the amazing nest products.",
+                                        "Home is always the best place, and I'm very blessed to be able to help \"Create a home that takes care of the people inside it and the world around it.\""
+                                ]
+                        ],
+                        "responses": [
+                                {
+                                        "content": "Cool! What specifically do you do at nest?",
+                                        "nextXianzhe": ["0011"]
+                                }
+                        ]
+                },
+                {
+                        "id": "0011",
+                        "details": [
+                                [
+                                        "I'm working on the Android nest app using all the cutting-edge Android technologies. I cannot say what I am specifically working on😅, but you can get a flavor of what I'm working with by downloading the app from here",
+                                        "<a target='_blank' href='https://play.google.com/store/apps/details?id=com.nest.android'><img src='img/google-play-badge.png'></a>",
+                                        "Ah! sure! iPhone users! I got you.",
+                                        "<a target='_blank' href='https://itunes.apple.com/us/app/nest-mobile/id464988855?mt=8&ign-mpt=uo%3D4'><img src='img/apple-store-badge.png'></a>"
+                                ]
+                        ]
                 }
         ],
 
@@ -89,7 +142,7 @@
                                 "How is school going?",
                                 "Umm... Are you a college student?"
                         ],
-                        "nextXianzhe": ["0005"]
+                        "nextXianzhe": ["0009"]
                 },
                 {
                         "id": "1001",
