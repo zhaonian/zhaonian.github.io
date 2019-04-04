@@ -10,6 +10,51 @@
                         ]
                 },
                 {
+                        "id": "2002",
+                        "details": [["Glad you like it!"], ["😊😊😊"]]
+                },
+                {
+                        "id": "2003",
+                        "details": [
+                                [
+                                        "I haven't thought about a new job yet 🤔but definitely let me know how exciting the project is!"
+                                ]
+                        ],
+                        "nextXianzhe": ["0012"]
+                },
+                {
+                        "id": "2004",
+                        "details": [
+                                [
+                                        "No problem! Please let me know how we can make you a happy customer! :D"
+                                ]
+                        ],
+                        "nextXianzhe": ["0012"]
+                },
+                {
+                        "id": "2005",
+                        "details": [
+                                [
+                                        "the <a href='https://source.android.com/'>Android project</a> is considered open source.",
+                                        "and Android logo looks nicer XD",
+                                        "I guess I just had a better experience with Android"
+                                ]
+                        ],
+                        "responses": [
+                                { "content": "hehe", "nextXianzhe": ["2006"] },
+                                { "content": "XD", "nextXianzhe": ["2006"] },
+                                { "content": "...", "nextXianzhe": ["2006"] }
+                        ]
+                },
+                {
+                        "id": "2006",
+                        "details": [["XD"], ["haha"], ["😃😃😃"]]
+                },
+                {
+                        "id": "2008",
+                        "details": [["Cool"], ["🙂"]]
+                },
+                {
                         "id": "0000",
                         "details": [["很高兴遇见你"]],
                         "responses": [
@@ -97,7 +142,7 @@
                         ],
                         "responses": [
                                 {
-                                        "content": "Congrats! 👍 What's your next plan?",
+                                        "content": "Congrats! 👍 What's the plan now?",
                                         "nextXianzhe": ["0010"]
                                 },
                                 {
@@ -111,13 +156,16 @@
                         "details": [
                                 [
                                         "I just joined Google working on the amazing nest products.",
-                                        "Home is always the best place, and I'm very blessed to be able to help \"Create a home that takes care of the people inside it and the world around it.\""
+                                        "Home is always the best place, and I'm very blessed to be able to work on a mission of \"Create a home that takes care of the people inside it and the world around it.\""
                                 ]
                         ],
                         "responses": [
                                 {
                                         "content": "Cool! What specifically do you do at nest?",
                                         "nextXianzhe": ["0011"]
+                                },
+                                {
+                                        "content": "okay"
                                 }
                         ]
                 },
@@ -130,7 +178,170 @@
                                         "Ah! sure! iPhone users! I got you.",
                                         "<a target='_blank' href='https://itunes.apple.com/us/app/nest-mobile/id464988855?mt=8&ign-mpt=uo%3D4'><img src='img/apple-store-badge.png'></a>"
                                 ]
+                        ],
+                        "responses": [
+                                {
+                                        "content": "I love nest products!",
+                                        "nextXianzhe": ["2002"]
+                                },
+                                {
+                                        "content": "Interested in a new job opportunity?",
+                                        "nextXianzhe": ["2003"]
+                                },
+                                {
+                                        "content": "You know what? I don't really like nest mobile apps.. ",
+                                        "nextXianzhe": ["2004"]
+                                }
                         ]
+                },
+                {
+                        "id": "0012",
+                        "details": [
+                                [
+                                        "You can find me here",
+                                        "<a href='http://www.linkedin.com/in/zhaonianluan'>LinkedIn</a> <br/> <a href='http://www.github.com/zhaonian'>Github</a> <br/> <a href='mailto:lzn0830@gmail.com'>lzn0830@gmail.com</a>"
+                                ]
+                        ]
+                },
+                {
+                        "id": "0013",
+                        "details": [
+                                [
+                                        "Most of my experience are related to mobile dev and backend dev. Now I do Android dev everyday and I really enjoy it."
+                                ]
+                        ],
+                        "responses": [
+                                {
+                                        "content": "Why Android over iOS?? 😳",
+                                        "nextXianzhe": ["2005"]
+                                },
+                                {
+                                        "content": "Interesting",
+                                        "nextXianzhe": ["2002"]
+                                },
+                                {
+                                        "content": "What do you work on at work?",
+                                        "nextXianzhe": ["0010"]
+                                }
+                        ]
+                },
+                {
+                        "id": "0014",
+                        "details": [
+                                [
+                                        "It's a truly blessing to be able to make a living by doing what I love.",
+                                        "My short-term goal is to finish the project I'm working on with 2 of my friends at UCI. Pretty much like a messenger mock.",
+                                        "I don't have a long-term goal yet, because I'm not sure what I will be doing in the future. Don't get me wrong. I don't mean I'm lost or I cannot handle my life well.",
+                                        "I think there are just too many uncertainties in life, and we are changing all the time. We may hate something we liked yesterday.",
+                                        "I see all the uncertainties as choices, more uncertainties = more choices in life. Thanks to all the different choices we can make, we can make the most out of our lives. 😃"
+                                ]
+                        ],
+                        "responses": [
+                                {
+                                        "content": "Interesting 😳"
+                                },
+                                {
+                                        "content": "Cool"
+                                },
+                                {
+                                        "content": "🙂"
+                                }
+                        ]
+                },
+                {
+                        "id": "0015",
+                        "details": [
+                                [
+                                        "Recently, I just moved to the Bay Area from Irvine for work."
+                                ]
+                        ],
+                        "responses": [
+                                {
+                                        "content": "Do you like the bay?",
+                                        "nextXianzhe": ["0016"]
+                                },
+                                {
+                                        "content": "Sillicon Valley! Coool!",
+                                        "nextXianzhe": ["0016"]
+                                }
+                        ]
+                },
+                {
+                        "id": "0016",
+                        "details": [["it is nice."]],
+                        "responses": [
+                                {
+                                        "content": "What's not nice about it?",
+                                        "nextXianzhe": ["0017"]
+                                },
+                                {
+                                        "content": "What is a typical day in your life like?",
+                                        "nextXianzhe": ["0018"]
+                                }
+                        ]
+                },
+                {
+                        "id": "0017",
+                        "details": [
+                                ["the traffic. people mountain people sea."]
+                        ]
+                },
+                {
+                        "id": "0018",
+                        "details": [
+                                [
+                                        "it depneds on what to do everyday.",
+                                        "most of the time, it's pretty much like Mayuko's day 👇",
+                                        "<a href='https://www.youtube.com/watch?v=rqX8PFcOpxA'>https://www.youtube.com/watch?v=rqX8PFcOpxA</a>",
+                                        "except for the makeup part 👀"
+                                ]
+                        ],
+                        "responses": [
+                                {
+                                        "content": "I'll check it out!",
+                                        "nextXianzhe": ["2008"]
+                                },
+                                {
+                                        "content": "haha"
+                                }
+                        ]
+                },
+                {
+                        "id": "0019",
+                        "details": [
+                                [
+                                        "I'm originally from a small city in Shandong, China",
+                                        "<a href=`https://www.google.com/maps/place/Taishan,+Tai'an,+Shandong,+China/@36.1980769,117.1134745,13z/data=!4m13!1m7!3m6!1s0x35c22976667f4a4b:0x12da787201b0e126!2sTai'an,+Shandong,+China!3b1!8m2!3d36.200252!4d117.087614!3m4!1s0x35c187c77c741a27:0xb818379ffae6c762!8m2!3d36.1920618!4d117.1353722`>Find Taian on Google Maps</a>"
+                                ]
+                        ],
+                        "responses": [
+                                {
+                                        "content": "Cool"
+                                }
+                        ]
+                },
+                {
+                        "id": "0020",
+                        "details": [
+                                [
+                                        "a trip to Japan ",
+                                        "This has been long overdue. I will put it on my plan for next year."
+                                ]
+                        ],
+                        "responses": [
+                                {
+                                        "content": "You should definitely do it!!",
+                                        "nextXianzhe": ["0021"]
+                                },
+                                {
+                                        "content": "Interesting",
+                                        "nextXianzhe": ["0021"]
+                                }
+                        ]
+                },
+                {
+                        "id": "0021",
+                        "details": [["😊"], ["Yea!!!!"]]
                 }
         ],
 
@@ -148,52 +359,45 @@
                         "id": "1001",
                         "brief": "work",
                         "details": ["What do you do?", "How's work?"],
-                        "nextXianzhe": ["0008"]
+                        "nextXianzhe": ["0010"]
                 },
                 {
                         "id": "1002",
                         "brief": "tech",
-                        "details": [
-                                "What's your background?",
-                                "Do you want to talk about your technical skills?"
-                        ],
-                        "nextXianzhe": ["0009"]
+                        "details": ["What's your technical background?"],
+                        "nextXianzhe": ["0013"]
                 },
                 {
                         "id": "1003",
                         "brief": "goal",
                         "details": [
-                                "What's your goal in life?",
                                 "Now what should we talk about?🤔 um.. maybe your life goal?.."
                         ],
-                        "nextXianzhe": ["0019"]
+                        "nextXianzhe": ["0014"]
                 },
                 {
                         "id": "1004",
                         "brief": "life",
-                        "details": ["Any news in life?", "How's life??"],
-                        "nextXianzhe": ["0022"]
+                        "details": ["Any news in life?", "How's life?"],
+                        "nextXianzhe": ["0015"]
                 },
                 {
                         "id": "1005",
                         "brief": "fact",
-                        "details": [
-                                "Where are you from?",
-                                "why does \"keyu\" in your url mean?"
-                        ],
-                        "nextXianzhe": ["0037"]
+                        "details": ["Where are you from?"],
+                        "nextXianzhe": ["0019"]
                 },
                 {
                         "id": "1006",
                         "brief": "wish",
                         "details": ["What's on your bucket list?"],
-                        "nextXianzhe": ["0028"]
+                        "nextXianzhe": ["0020"]
                 },
                 {
                         "id": "1007",
                         "brief": "connect",
                         "details": ["Let's stay connected :D"],
-                        "nextXianzhe": ["0006"]
+                        "nextXianzhe": ["0012"]
                 }
         ]
 }
