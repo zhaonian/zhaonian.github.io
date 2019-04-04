@@ -56,34 +56,28 @@
                 },
                 {
                         "id": "0000",
-                        "details": [["很高兴遇见你"]],
+                        "details": [["很高兴遇见你 || Nice to meet you"]],
                         "responses": [
                                 {
-                                        "content": "我也是！",
+                                        "content": "You, too",
                                         "nextXianzhe": ["0003"]
                                 },
                                 {
-                                        "content": "我很怀疑这点……",
+                                        "content": "Bye",
                                         "nextXianzhe": ["0001"]
                                 }
                         ]
                 },
                 {
                         "id": "0001",
-                        "details": [["……", "你是傻B吗？"]],
-                        "nextXianzhe": ["0003"]
-                },
-                {
-                        "id": "0002",
-                        "details": [["我随便说说的，别在意"]],
-                        "nextXianzhe": ["0003"]
+                        "details": [["’(°ー°〃)"]]
                 },
                 {
                         "id": "0003",
-                        "details": [["你想知道点什么？"]],
+                        "details": [["How can I help you 😊"]],
                         "responses": [
                                 {
-                                        "content": "你是谁？",
+                                        "content": "Who are you?",
                                         "nextXianzhe": ["0004"]
                                 }
                         ]
@@ -91,47 +85,31 @@
                 {
                         "id": "0004",
                         "details": [
-                                ["唔……", "这是个哲学问题……", "我是你爸爸!!"]
+                                ["Good question!", "I am Zhaonian Luan. Pronounced as 'ZOW-nee-an LOO-ahn'"]
                         ],
                         "nextXianzhe": ["0005"]
                 },
                 {
                         "id": "0005",
-                        "details": [["你还想知道啥？？？"]],
+                        "details": [["What brings you here? 🙂"]],
                         "responses": [
                                 {
-                                        "content": "Tell me about your favorite project？",
-                                        "nextXianzhe": ["0005"]
+                                        "content": "Interested in a new job opportunity?",
+                                        "nextXianzhe": ["2003"]
                                 },
                                 {
-                                        "content": "你的职业是？",
-                                        "nextXianzhe": ["0006"]
-                                }
-                        ]
-                },
-                {
-                        "id": "0006",
-                        "details": [["我住在我女朋友家里蹭吃蹭喝 XD"]],
-                        "responses": [
+                                        "content": "Tell me about your experience",
+                                        "nextXianzhe": ["0013"]
+                                },
                                 {
-                                        "content": "有意向跳槽来我们公司当CEO吗？",
-                                        "nextXianzhe": ["0007"]
-                                }
+                                    "content": "有意向跳槽来我们公司当Tech Lead吗？",
+                                    "nextXianzhe": ["0007"]
+                            }
                         ]
                 },
                 {
                         "id": "0007",
-                        "details": [["谢谢喜欢~"], ["XD"], ["嘿嘿嘿嘿~"]]
-                },
-                {
-                        "id": "0008",
-                        "details": [["在一个安静的地方做爱做的事情"]],
-                        "responses": [
-                                {
-                                        "content": "有意向跳槽来我们公司当CEO吗？",
-                                        "nextXianzhe": ["0007"]
-                                }
-                        ]
+                        "details": [["XD"], ["嘿嘿嘿嘿~"]]
                 },
                 {
                         "id": "0009",
