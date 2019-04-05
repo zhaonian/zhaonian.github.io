@@ -195,6 +195,12 @@
                     ]
                 },
                 {
+                    "content": "What do you do?",
+                    "nextXianzhe": [
+                        "0010"
+                    ]
+                },
+                {
                     "content": "Interested in a new job opportunity?",
                     "nextXianzhe": [
                         "2003"
@@ -237,6 +243,43 @@
                     "content": "Good for you!!",
                     "nextXianzhe": [
                         "2001"
+                    ]
+                },
+                {
+                    "content": "What major did you study at UCI?",
+                    "nextXianzhe": [
+                        "0022"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "0022",
+            "details": [
+                [
+                    "Computer Science.",
+                    "However, I would see myself more as an Engineer rather than a Computer Scientist.",
+                    "I guess most of the CS students turned out to be engineers eventually anyway. 🤔",
+                    "In my opinion, Engineer is always the one who implements the actual thing in most cases, and I like the feeling of building stuffs all the time"
+                ]
+            ],
+            "responses": [
+                {
+                    "content": "Agreed!",
+                    "nextXianzhe": [
+                        "2008"
+                    ]
+                },
+                {
+                    "content": "Okay",
+                    "nextXianzhe": [
+                        "2008"
+                    ]
+                },
+                {
+                    "content": "Interesting 😳",
+                    "nextXianzhe": [
+                        "2008"
                     ]
                 }
             ]
