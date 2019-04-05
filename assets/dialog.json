@@ -189,15 +189,15 @@
             ],
             "responses": [
                 {
-                    "content": "Interested in a new job opportunity?",
-                    "nextXianzhe": [
-                        "2003"
-                    ]
-                },
-                {
                     "content": "Tell me about your experience",
                     "nextXianzhe": [
                         "0013"
+                    ]
+                },
+                {
+                    "content": "Interested in a new job opportunity?",
+                    "nextXianzhe": [
+                        "2003"
                     ]
                 },
                 {
