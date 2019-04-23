@@ -309,9 +309,9 @@
             "details": [
                 [
                     "I'm working on the Google Home and Nest app using all the cutting-edge Android technologies. I cannot say what I am specifically working on😅, but you can get a flavor of what I'm working with by downloading the app from here",
-                    "<a target='_blank' href='https://play.google.com/store/apps/details?id=com.nest.android'><img src='img/google-play-badge.png'></a>",
+                    "<a target='_blank' href='https://play.google.com/store/apps/details?id=com.google.android.apps.chromecast.app'><img src='img/google-play-badge.png'></a>",
                     "Ah! sure! iPhone users! I got you.",
-                    "<a target='_blank' href='https://itunes.apple.com/us/app/nest-mobile/id464988855?mt=8&ign-mpt=uo%3D4'><img src='img/apple-store-badge.png'></a>"
+                    "<a target='_blank' href='https://itunes.apple.com/us/app/google-home/id680819774?mt=8'><img src='img/apple-store-badge.png'></a>"
                 ]
             ],
             "responses": [
