@@ -154,6 +154,12 @@
                     "nextXianzhe": [
                         "0006"
                     ]
+                },
+                {
+                    "content": "I want referrals!!!",
+                    "nextXianzhe": [
+                        "0023"
+                    ]
                 }
             ]
         },
@@ -165,6 +171,16 @@
                     "I mean...",
                     "You can't actually type.",
                     "So...👀"
+                ]
+            ]
+        },
+        {
+            "id": "0023",
+            "details": [
+                [
+                    "Here you go!",
+                    "<a target='_blank' href='./referrals.html'>Referrals :)</a>",
+                    "Thanks for using my referrals"
                 ]
             ]
         },
@@ -600,6 +616,16 @@
             ],
             "nextXianzhe": [
                 "0012"
+            ]
+        },
+        {
+            "id": "1008",
+            "brief": "connect",
+            "details": [
+                "Glad you asked!"
+            ],
+            "nextXianzhe": [
+                "0023"
             ]
         }
     ]
