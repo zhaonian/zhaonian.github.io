@@ -86,6 +86,8 @@
     border: 1px solid rgba(0,0,0,.04);
     margin-bottom: 18px;
     overflow: hidden; /* ensure background doesn't bleed beyond rounded corners */
+    background-clip: padding-box; /* clip background to inside of border */
+    isolation: isolate; /* new stacking context to avoid bleed from children */
 }
 
 .item:before {
@@ -97,7 +99,7 @@
     margin: 0 1rem 0.5rem 0;
     color: var(--bg);
     background: var(--highlight1) linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
-    text-shadow: 0 0 1px var(--highlight1);
+    text-shadow: none;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
