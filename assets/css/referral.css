@@ -16,6 +16,12 @@
     padding: 32px 20px 56px;
 }
 
+.back {
+    margin: 6px 0 16px 0;
+}
+.back a { color: var(--color); text-decoration: none; }
+.back a:hover { text-decoration: underline; }
+
 /* Header with a tiny soot sprite (Ghibli‑cute) */
 .header {
     display: flex;
@@ -79,6 +85,7 @@
     box-shadow: 0 10px 20px rgba(0,0,0,.05), 0 2px 6px rgba(0,0,0,.04);
     border: 1px solid rgba(0,0,0,.04);
     margin-bottom: 18px;
+    overflow: hidden; /* ensure background doesn't bleed beyond rounded corners */
 }
 
 .item:before {
@@ -100,17 +107,8 @@
     box-shadow: 0 4px 10px rgba(0,0,0,.08);
 }
 
-.item:after {
-    width: 1.25rem;
-    height: 1.25rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    background: var(--accent);
-    z-index: -1;
-    border-top-left-radius: 3px;
-}
+/* remove decorative corner accent to avoid bleed */
+.item:after { display: none; }
 
 
 .headline {
