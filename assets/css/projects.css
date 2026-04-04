@@ -123,7 +123,8 @@ body {
 }
 
 .project-card--featured .project-demo {
-    flex: 0 0 280px;
+    flex: 0 0 300px;
+    height: auto;
     min-height: 280px;
 }
 
@@ -135,11 +136,12 @@ body {
 /* === Demo Area === */
 .project-demo {
     background: linear-gradient(135deg, #e8f5f3 0%, #dff0ed 50%, #f0ebe0 100%);
-    min-height: 200px;
+    height: 240px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .demo-placeholder {
@@ -162,6 +164,28 @@ body {
 .project-demo img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+/* Two images side by side */
+.project-demo--dual {
+    display: flex;
+    gap: 0;
+}
+
+.project-demo--dual img {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* Three images side by side */
+.project-demo--triple {
+    display: flex;
+    gap: 0;
+}
+
+.project-demo--triple img {
+    width: 33.334%;
     object-fit: cover;
 }
 
@@ -329,7 +353,7 @@ body {
     }
     .project-card--featured .project-demo {
         flex: none;
-        min-height: 200px;
+        height: 240px;
     }
     .project-card--featured .project-info {
         padding: 18px 20px 20px;
@@ -342,6 +366,6 @@ body {
     .subtitle { font-size: .9rem; }
     .project-name { font-size: 1.05rem; }
     .project-info { padding: 14px 16px 16px; }
-    .project-demo { min-height: 160px; }
+    .project-demo { height: 200px; }
     .demo-placeholder i { font-size: 2rem; }
 }
