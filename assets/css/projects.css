@@ -336,6 +336,13 @@ body {
     transform: translateY(0);
 }
 
+/* === Card Link Wrapper === */
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+}
+
 /* === Footer === */
 .note {
     margin-top: 28px;
