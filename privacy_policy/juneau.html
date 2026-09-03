@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Juneau Mobile Client for Google Jules</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #1f2937;
+            background-color: #0f172a;
+        }
+        .container {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            color: #e2e8f0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        h1 {
+            color: #38bdf8;
+            border-bottom: 2px solid #10b981;
+            padding-bottom: 10px;
+            font-size: 2rem;
+        }
+        h2 {
+            color: #f8fafc;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+        p {
+            color: #cbd5e1;
+            margin-bottom: 16px;
+        }
+        .highlight {
+            background-color: rgba(56, 189, 248, 0.1);
+            padding: 16px;
+            border-left: 4px solid #38bdf8;
+            border-radius: 6px;
+            margin: 20px 0;
+            color: #e2e8f0;
+        }
+        ul {
+            padding-left: 20px;
+            color: #cbd5e1;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .disclaimer-box {
+            background-color: rgba(245, 158, 11, 0.1);
+            padding: 16px;
+            border-left: 4px solid #f59e0b;
+            border-radius: 6px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #fef3c7;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Juneau</h1>
+        <p><strong>Effective Date:</strong> September 2, 2026</p>
+        
+        <div class="disclaimer-box">
+            <strong>Trademark Disclaimer:</strong> Juneau is an independent third-party mobile client developed for use with Google Jules. Juneau is not affiliated with, sponsored by, or endorsed by Google LLC. <em>Jules</em> and <em>Google</em> are trademarks of Google LLC.
+        </div>
+
+        <div class="highlight">
+            <strong>Summary:</strong> Juneau operates entirely client-side on your iOS device. We do not operate developer tracking servers, intermediary proxy nodes, or telemetry services. Your API keys are encrypted locally using Apple iOS Keychain Services.
+        </div>
+
+        <h2>1. Information We Collect (Zero Tracking)</h2>
+        <p>Juneau is designed with privacy-first architecture. We do not collect, store, log, or transmit any personal data, usage metrics, device identifiers, or analytics to developer-controlled servers.</p>
+
+        <h2>2. API Key Credentials & Local Hardware Encryption</h2>
+        <p>To use Juneau, you provide your personal Google Jules API Key generated at <a href="https://jules.google.com/settings/api" target="_blank">jules.google.com/settings/api</a>. Your API key is:</p>
+        <ul>
+            <li>Stored exclusively on your iOS device using <strong>Apple iOS Keychain Services</strong> (<code>kSecClassGenericPassword</code>), protected by hardware-level Secure Enclave encryption.</li>
+            <li>Never sent to any third-party server, proxy, or developer infrastructure.</li>
+            <li>Purged instantly from your device's Keychain whenever you tap <em>"Disconnect API Key"</em> in the app's Settings menu.</li>
+        </ul>
+
+        <h2>3. Direct API Communication</h2>
+        <p>All network traffic—including fetching repository sources, task sessions, activity logs, implementation plans, and sending user prompts—is transmitted <strong>directly from your iOS device to Google's official endpoints</strong> (<code>https://jules.googleapis.com</code>) over secure, encrypted TLS/HTTPS protocols.</p>
+
+        <h2>4. Data Minimization & GitHub Repositories</h2>
+        <p>Juneau only processes repository metadata and task activity payload data returned directly by the official Google Jules API for the sole purpose of rendering the user interface on your mobile screen. Juneau does not store your code repository files on external servers.</p>
+
+        <h2>5. Children's Privacy</h2>
+        <p>Juneau is a developer tool designed for software engineers and does not knowingly collect any data from children under the age of 13.</p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy periodically. Any updates will be posted directly to this page with an updated effective date.</p>
+
+        <h2>7. Contact Information</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy, please contact us at:</p>
+        <p>Email: <a href="mailto:jerry@zluan.io">jerry@zluan.io</a><br>
+        Website: <a href="https://zhaonian.github.io" target="_blank">zhaonian.github.io</a></p>
+
+        <div class="footer">
+            &copy; 2026 Zhaonian Luan. All rights reserved. | Juneau - Mobile Client for Google Jules
+        </div>
+    </div>
+</body>
+</html>
