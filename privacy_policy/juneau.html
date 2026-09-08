@@ -82,40 +82,55 @@
 <body>
     <div class="container">
         <h1>Privacy Policy for Juneau</h1>
-        <p><strong>Effective Date:</strong> September 2, 2026</p>
+        <p><strong>Effective Date:</strong> September 8, 2026</p>
         
         <div class="disclaimer-box">
             <strong>Trademark Disclaimer:</strong> Juneau is an independent third-party mobile client developed for use with Google Jules. Juneau is not affiliated with, sponsored by, or endorsed by Google LLC. <em>Jules</em> and <em>Google</em> are trademarks of Google LLC.
         </div>
 
         <div class="highlight">
-            <strong>Summary:</strong> Juneau operates entirely client-side on your iOS device. We do not operate developer tracking servers, intermediary proxy nodes, or telemetry services. Your API keys are encrypted locally using Apple iOS Keychain Services.
+            <strong>Summary:</strong> Juneau operates entirely client-side on your iOS device. We do not operate developer tracking servers or sell your data. Your Google Jules API keys are encrypted locally using Apple iOS Keychain Services, and in-app purchase transactions are verified directly via Apple App Store and RevenueCat.
         </div>
 
-        <h2>1. Information We Collect (Zero Tracking)</h2>
-        <p>Juneau is designed with privacy-first architecture. We do not collect, store, log, or transmit any personal data, usage metrics, device identifiers, or analytics to developer-controlled servers.</p>
+        <h2>1. Information We Collect & Zero Telemetry Guarantee</h2>
+        <p>Juneau is designed with a strict privacy-first architecture. We do not collect, harvest, track, or sell your personal data, source code, activity logs, browsing history, or behavioral metrics.</p>
 
-        <h2>2. API Key Credentials & Local Hardware Encryption</h2>
+        <h2>2. In-App Purchases & Subscription Processing</h2>
+        <p>Juneau offers paid subscriptions and lifetime access options ("Juneau Pro"). To process purchases and validate active subscription entitlements, the Application integrates with Apple In-App Purchases and RevenueCat, Inc. ("RevenueCat").</p>
+        <ul>
+            <li><strong>Payment & Billing Data:</strong> All financial transactions, billing details, payment methods, and billing addresses are processed exclusively by Apple Inc. via the App Store. The Developer does not store, collect, or have access to your payment card details or banking information.</li>
+            <li><strong>Subscription Status Verification:</strong> When you purchase or restore Juneau Pro, an anonymous App User ID and purchase receipt metadata (such as purchase dates, product identifiers, and entitlement active status) are transmitted to RevenueCat for entitlement validation. RevenueCat handles this data strictly in accordance with their <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy Policy</a>.</li>
+        </ul>
+
+        <h2>3. API Key Credentials & Local Hardware Encryption</h2>
         <p>To use Juneau, you provide your personal Google Jules API Key generated at <a href="https://jules.google.com/settings/api" target="_blank">jules.google.com/settings/api</a>. Your API key is:</p>
         <ul>
             <li>Stored exclusively on your iOS device using <strong>Apple iOS Keychain Services</strong> (<code>kSecClassGenericPassword</code>), protected by hardware-level Secure Enclave encryption.</li>
-            <li>Never sent to any third-party server, proxy, or developer infrastructure.</li>
-            <li>Purged instantly from your device's Keychain whenever you tap <em>"Disconnect API Key"</em> in the app's Settings menu.</li>
+            <li>Never sent to any developer-owned server, tracking proxy, or external telemetry service.</li>
+            <li>Purged instantly from your device's Keychain whenever you tap <em>"Disconnect API Key"</em> in the app's Settings menu or uninstall the app.</li>
         </ul>
 
-        <h2>3. Direct API Communication</h2>
-        <p>All network traffic—including fetching repository sources, task sessions, activity logs, implementation plans, and sending user prompts—is transmitted <strong>directly from your iOS device to Google's official endpoints</strong> (<code>https://jules.googleapis.com</code>) over secure, encrypted TLS/HTTPS protocols.</p>
+        <h2>4. Direct API Communication</h2>
+        <p>All core network communication—including fetching repository metadata, task sessions, activity streams, implementation plans, and transmitting prompt instructions—occurs <strong>directly between your iOS device and Google's official API endpoints</strong> (<code>https://jules.googleapis.com</code>) over secure TLS/HTTPS protocols.</p>
 
-        <h2>4. Data Minimization & GitHub Repositories</h2>
-        <p>Juneau only processes repository metadata and task activity payload data returned directly by the official Google Jules API for the sole purpose of rendering the user interface on your mobile screen. Juneau does not store your code repository files on external servers.</p>
+        <h2>5. Data Minimization & Source Code Confidentiality</h2>
+        <p>Juneau only processes repository metadata and task activity payloads returned directly by the official Google Jules API for the sole purpose of rendering the user interface on your screen. Juneau does not store, index, transmit, or back up your repository source code on external servers.</p>
 
-        <h2>5. Children's Privacy</h2>
-        <p>Juneau is a developer tool designed for software engineers and does not knowingly collect any data from children under the age of 13.</p>
+        <h2>6. Third-Party Service Links & Policies</h2>
+        <p>Juneau interacts with third-party services. We encourage you to review their respective privacy practices:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> & <a href="https://cloud.google.com/terms/" target="_blank">Google Cloud Terms</a></li>
+            <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
+            <li><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
+        </ul>
 
-        <h2>6. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy periodically. Any updates will be posted directly to this page with an updated effective date.</p>
+        <h2>7. Children's Privacy</h2>
+        <p>Juneau is a developer utility designed for software engineers and does not knowingly collect any personal information from children under 13 years of age.</p>
 
-        <h2>7. Contact Information</h2>
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy periodically. Any updates will be published on this page with a revised effective date.</p>
+
+        <h2>9. Contact Information</h2>
         <p>If you have any questions or feedback regarding this Privacy Policy, please contact us at:</p>
         <p>Email: <a href="mailto:jerry@zluan.io">jerry@zluan.io</a><br>
         Website: <a href="https://zhaonian.github.io" target="_blank">zhaonian.github.io</a></p>
