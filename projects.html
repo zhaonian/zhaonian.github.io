@@ -11,23 +11,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/projects.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
+    <!-- Animated aurora background -->
+    <div class="aurora" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
     <main class="container">
-        <header class="header">
+        <header class="header reveal">
             <div class="sprite" aria-hidden="true"></div>
             <div>
                 <h1 class="title">Projects</h1>
-                <p class="subtitle">Things I've built and shipped</p>
+                <p class="subtitle">Things I've built and shipped<span class="caret" aria-hidden="true">_</span></p>
             </div>
         </header>
-        <nav class="back"><a href="index.html">&larr; Back to zluan.io home page</a></nav>
+        <nav class="back reveal"><a href="index.html"><span class="back-arrow">&larr;</span> Back to zluan.io home page</a></nav>
+
+        <!-- Platform filter -->
+        <div class="filters reveal" role="tablist" aria-label="Filter projects by platform">
+            <span class="filters-pill" aria-hidden="true"></span>
+            <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter" data-filter="ios" role="tab" aria-selected="false"><i class="fab fa-apple"></i> iOS</button>
+            <button class="filter" data-filter="android" role="tab" aria-selected="false"><i class="fab fa-android"></i> Android</button>
+            <button class="filter" data-filter="macos" role="tab" aria-selected="false"><i class="fas fa-laptop"></i> macOS</button>
+            <button class="filter" data-filter="watchos" role="tab" aria-selected="false"><i class="fas fa-clock"></i> watchOS</button>
+            <button class="filter" data-filter="web" role="tab" aria-selected="false"><i class="fas fa-globe"></i> Web</button>
+        </div>
 
         <div class="projects-grid">
 
             <!-- Case Checkr (Featured) -->
-            <article class="project-card project-card--featured">
+            <article class="project-card project-card--featured" data-platforms="ios android">
                 <div class="project-demo">
                     <video autoplay muted loop playsinline>
                         <source src="img/casecheckr-preview.mp4" type="video/mp4">
@@ -37,6 +57,7 @@
                     <div class="project-chips">
                         <span class="chip chip--ios"><i class="fab fa-apple"></i> iOS</span>
                         <span class="chip chip--android"><i class="fab fa-android"></i> Android</span>
+                        <span class="chip chip--featured"><i class="fas fa-fire"></i> Featured</span>
                     </div>
                     <h2 class="project-name">Case Checkr</h2>
                     <p class="project-desc">Track the status of your U.S. immigration case. Real-time updates, history timeline, and push notifications — all in one place.</p>
@@ -48,7 +69,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
-                            <span class="reviews-rating">4.8</span>
+                            <span class="reviews-rating" data-count="4.8">4.8</span>
                         </div>
                         <div class="reviews-quotes">
                             <blockquote>"Super helpful for tracking my case!"</blockquote>
@@ -67,14 +88,92 @@
                 </div>
             </article>
 
-            <!-- ZA WARUDO -->
-            <article class="project-card">
-                <div class="project-demo">
-                    <img src="img/za-warudo-icon.png" alt="ZA WARUDO App Icon">
+            <!-- Juneau (Featured, reversed) -->
+            <article class="project-card project-card--featured project-card--reverse project-card--dark" data-platforms="ios">
+                <div class="project-demo project-demo--juneau">
+                    <div class="phone-fan">
+                        <img class="phone phone--left" src="img/juneau-2.jpg" alt="Juneau streaming live agent updates" loading="lazy">
+                        <img class="phone phone--right" src="img/juneau-3.jpg" alt="Juneau approving interactive plan steps with a code diff" loading="lazy">
+                        <img class="phone phone--center" src="img/juneau-1.jpg" alt="Juneau home screen listing coding sessions across repos" loading="lazy">
+                    </div>
+                    <div class="terminal-tag" aria-hidden="true"><span>&gt;</span>_ jules agent in your pocket</div>
                 </div>
                 <div class="project-info">
                     <div class="project-chips">
-                        <span class="chip chip--ios"><i class="fab fa-apple"></i> WatchOS</span>
+                        <span class="chip chip--ios"><i class="fab fa-apple"></i> iOS</span>
+                        <span class="chip chip--ipad"><i class="fas fa-tablet-alt"></i> iPadOS</span>
+                        <span class="chip chip--new"><i class="fas fa-magic"></i> New</span>
+                    </div>
+                    <h2 class="project-name">Juneau</h2>
+                    <p class="project-desc">A native iOS client for autonomous AI coding agents. Kick off tasks, watch the agent think in real time, approve plans, review diffs, and ship GitHub PRs — right from your phone.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-bolt"></i> Live session streaming</li>
+                        <li><i class="fas fa-check-circle"></i> Interactive plan approvals</li>
+                        <li><i class="fas fa-code-branch"></i> Side-by-side diffs &amp; PRs</li>
+                        <li><i class="fas fa-lock"></i> Keychain-secured, zero tracking</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="terms_of_use/juneau.html" class="project-link project-link--ghost">
+                            <i class="fas fa-info-circle"></i> Learn more
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- OMG (Offline Multipeer Games) -->
+            <article class="project-card" data-platforms="ios">
+                <div class="project-demo project-demo--omg" aria-label="Animated preview of a tic-tac-toe match between two nearby devices">
+                    <div class="omg-device omg-device--a"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="omg-waves omg-waves--a"><span></span><span></span><span></span></div>
+                    <svg class="omg-board" viewBox="0 0 120 120" aria-hidden="true">
+                        <g class="grid">
+                            <line x1="40" y1="8" x2="40" y2="112" />
+                            <line x1="80" y1="8" x2="80" y2="112" />
+                            <line x1="8" y1="40" x2="112" y2="40" />
+                            <line x1="8" y1="80" x2="112" y2="80" />
+                        </g>
+                        <!-- X at (0,0) -->
+                        <g class="mark mark--x m1"><path d="M10 10 L30 30" /><path d="M30 10 L10 30" /></g>
+                        <!-- O at (1,1) -->
+                        <circle class="mark mark--o m2" cx="60" cy="60" r="11" />
+                        <!-- X at (2,0) -->
+                        <g class="mark mark--x m3"><path d="M90 10 L110 30" /><path d="M110 10 L90 30" /></g>
+                        <!-- O at (1,0) -->
+                        <circle class="mark mark--o m4" cx="60" cy="20" r="11" />
+                        <!-- X at (0,2) -->
+                        <g class="mark mark--x m5"><path d="M10 90 L30 110" /><path d="M30 90 L10 110" /></g>
+                        <!-- O at (1,2) -->
+                        <circle class="mark mark--o m6" cx="60" cy="100" r="11" />
+                        <!-- winning line -->
+                        <path class="win" d="M60 4 L60 116" />
+                    </svg>
+                    <div class="omg-waves omg-waves--b"><span></span><span></span><span></span></div>
+                    <div class="omg-device omg-device--b"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="omg-badge"><i class="fas fa-plane"></i> No internet needed</div>
+                </div>
+                <div class="project-info">
+                    <div class="project-chips">
+                        <span class="chip chip--ios"><i class="fab fa-apple"></i> iOS</span>
+                        <span class="chip chip--new"><i class="fas fa-magic"></i> New</span>
+                    </div>
+                    <h2 class="project-name">OMG <span class="project-name-sub">Offline Multipeer Games</span></h2>
+                    <p class="project-desc">Party games for when the Wi-Fi's gone. Spin up a local lobby and play Gomoku, Tic-Tac-Toe and more with friends nearby over Bluetooth &amp; peer-to-peer Wi-Fi — no accounts, no servers, no internet.</p>
+                    <div class="project-links">
+                        <a href="terms_of_use/omg.html" class="project-link project-link--ghost">
+                            <i class="fas fa-info-circle"></i> Learn more
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ZA WARUDO -->
+            <article class="project-card" data-platforms="watchos">
+                <div class="project-demo project-demo--zawarudo">
+                    <img src="img/za-warudo-icon.png" alt="ZA WARUDO App Icon" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <div class="project-chips">
+                        <span class="chip chip--ios"><i class="fab fa-apple"></i> watchOS</span>
                     </div>
                     <h2 class="project-name">ZA WARUDO</h2>
                     <p class="project-desc">Experience iconic anime abilities on your Apple Watch. Trigger legendary sound effects like "The World" and "Ora Ora" flurries entirely through your own movements using advanced accelerometer detection.</p>
@@ -85,9 +184,9 @@
             </article>
 
             <!-- Offline AI -->
-            <article class="project-card">
+            <article class="project-card" data-platforms="ios">
                 <div class="project-demo">
-                    <img src="img/offlineai-preview.png" alt="Offline AI app screenshot showing on-device chat with no network">
+                    <img src="img/offlineai-preview.png" alt="Offline AI app screenshot showing on-device chat with no network" loading="lazy">
                 </div>
                 <div class="project-info">
                     <div class="project-chips">
@@ -104,9 +203,9 @@
             </article>
 
             <!-- SafeDine -->
-            <article class="project-card">
+            <article class="project-card" data-platforms="ios web">
                 <div class="project-demo">
-                    <img src="img/safedine-preview.png" alt="SafeDine app showing restaurant inspection results">
+                    <img src="img/safedine-preview.png" alt="SafeDine app showing restaurant inspection results" loading="lazy">
                 </div>
                 <div class="project-info">
                     <div class="project-chips">
@@ -127,9 +226,9 @@
             </article>
 
             <!-- teslawrap.art -->
-            <article class="project-card">
+            <article class="project-card" data-platforms="web">
                 <div class="project-demo">
-                    <img src="img/teslawrap-preview.png" alt="TeslaWrap 2D wrap template editor">
+                    <img src="img/teslawrap-preview.png" alt="TeslaWrap 2D wrap template editor" loading="lazy">
                 </div>
                 <div class="project-info">
                     <div class="project-chips">
@@ -146,11 +245,11 @@
             </article>
 
             <!-- DualCap -->
-            <article class="project-card">
+            <article class="project-card" data-platforms="ios">
                 <div class="project-demo project-demo--triple">
-                    <img src="img/dualcap-1.png" alt="DualCap PiP mode at a concert">
-                    <img src="img/dualcap-2.png" alt="DualCap dual capture promo">
-                    <img src="img/dualcap-3.png" alt="DualCap unleash dual camera">
+                    <img src="img/dualcap-1.png" alt="DualCap PiP mode at a concert" loading="lazy">
+                    <img src="img/dualcap-2.png" alt="DualCap dual capture promo" loading="lazy">
+                    <img src="img/dualcap-3.png" alt="DualCap unleash dual camera" loading="lazy">
                 </div>
                 <div class="project-info">
                     <div class="project-chips">
@@ -167,10 +266,10 @@
             </article>
 
             <!-- Instant Tone Changer -->
-            <article class="project-card">
+            <article class="project-card" data-platforms="macos">
                 <div class="project-demo project-demo--dual">
-                    <img src="img/instant-preview-1.png" alt="Instant Tone Changer menu bar with tone options">
-                    <img src="img/instant-preview-2.png" alt="Instant Tone Changer model selection window">
+                    <img src="img/instant-preview-1.png" alt="Instant Tone Changer menu bar with tone options" loading="lazy">
+                    <img src="img/instant-preview-2.png" alt="Instant Tone Changer model selection window" loading="lazy">
                 </div>
                 <div class="project-info">
                     <div class="project-chips">
@@ -187,9 +286,9 @@
             </article>
 
             <!-- LeaseCalc -->
-            <article class="project-card">
+            <article class="project-card" data-platforms="ios android">
                 <div class="project-demo">
-                    <img src="img/leasecalc-showcase.png" alt="LeaseCalc App Showcase" style="width: 110%; height: 110%; object-fit: contain;">
+                    <img src="img/leasecalc-showcase.png" alt="LeaseCalc App Showcase" class="img-contain" loading="lazy">
                 </div>
                 <div class="project-info">
                     <div class="project-chips">
@@ -207,10 +306,10 @@
             </article>
 
             <!-- Micro Banana -->
-            <article class="project-card">
+            <article class="project-card" data-platforms="ios">
                 <div class="project-demo">
                     <div class="demo-placeholder">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="ping"><i class="fas fa-map-marker-alt"></i></span>
                         <span>App Preview</span>
                     </div>
                 </div>
@@ -226,8 +325,12 @@
 
         </div>
 
+        <p class="empty-state" hidden>Nothing here yet — stay tuned 👀</p>
+
         <footer class="note">Built with care by Zhaonian Luan</footer>
     </main>
+
+    <script src="js/projects.js" defer></script>
 
     <script type="text/javascript">
         (function () {
