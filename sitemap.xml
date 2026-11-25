@@ -125,4 +125,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url><loc>https://zluan.io/lyrae/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://zluan.io/lyrae/privacy/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://zluan.io/lyrae/terms/</loc><lastmod>2026-11-24</lastmod></url>
 </urlset>
